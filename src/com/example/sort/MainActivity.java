@@ -7,19 +7,22 @@ import android.util.Log;
 
 
 public class MainActivity extends Activity {
-	public int[] array = new int[]{7,15,3,65,9,247,9,2,6};
+	public int[] array = new int[]{7,15,3,65,9,247,9,2,6,13,43,98,295,0,1,345};
 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-//		InsertSort insertSort = new InsertSort(array);
+
+		//直接插入排序
 //		InsertSort.sortArray(array);
-//		InsertSort.insertSort(array);
-//		InsertSort.insertSortPart(array, 1, array.length);
 		
-		ShellSort.sortArray(array);
+		//希尔排序
+//		ShellSort.sortArray(array);
+		
+		//简单选择排序
+		SelectSort.sortArray(array);
 		
 		printArray();
 	}

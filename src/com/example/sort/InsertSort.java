@@ -69,8 +69,8 @@ public class InsertSort {
 	      for(int i=begin+d;i<array.length;i+=d){   
 	         int j=i-d;   
 	        temp=array[i];   
-	        for(;j>=0&&temp<array[j];j-d){   
-	            array[j+d]=array[j];  //将大于temp 的值整体后移一个单位   
+	        for(;j>=0&&temp<array[j];j-=d){   
+	            array[j+d]=array[j]; 
 	        }   
 	        array[j+d]=temp;   
 	     }   
