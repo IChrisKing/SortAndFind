@@ -22,7 +22,11 @@ public class MainActivity extends Activity {
 //		ShellSort.sortArray(array);
 		
 		//简单选择排序
-		SelectSort.sortArray(array);
+//		SelectSort.sortArray(array);
+		
+		//堆排序
+		HeapSort.sortArray(array);
+//		HeapSort.heapSort(array);
 		
 		printArray();
 	}
