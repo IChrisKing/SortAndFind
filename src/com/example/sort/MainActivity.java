@@ -28,7 +28,10 @@ public class MainActivity extends Activity {
 //		HeapSort.sortArray(array);
 
 		//冒泡排序
-		BubbleSort.sortArray(array);
+//		BubbleSort.sortArray(array);
+		
+		//快速排序
+		QuickSort.sortArray(array);
 		printArray();
 	}
 
