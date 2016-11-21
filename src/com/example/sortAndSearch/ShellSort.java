@@ -1,4 +1,4 @@
-package com.example.sort;
+package com.example.sortAndSearch;
 
 public class ShellSort {
 	static int[] array;

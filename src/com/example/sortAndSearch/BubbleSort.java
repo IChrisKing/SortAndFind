@@ -1,4 +1,4 @@
-package com.example.sort;
+package com.example.sortAndSearch;
 
 public class BubbleSort {
 	public static int[] array;

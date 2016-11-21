@@ -1,4 +1,4 @@
-package com.example.sort;
+package com.example.sortAndSearch;
 
 public class SelectSort {
 	static int[] array;
