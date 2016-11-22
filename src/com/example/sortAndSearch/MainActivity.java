@@ -10,7 +10,9 @@ import android.util.Log;
 
 public class MainActivity extends Activity {
 	public int[] sortArray = new int[]{7,15,3,65,9,247,9,2,6,13,43,98,295,0,1,345};
-	public int[] searchArray = new int[]{7,15,3,65,9,247,9,2,6,13,43,98,295,0,1,345,2,6,13,43,9};
+//	public int[] searchArray = new int[]{7,15,3,65,9,247,9,2,6,13,43,98,295,0,1,345,2,6,13,43,9};
+
+	public int[] searchArray = new int[]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,25,68,123};
 
 
 	@Override
@@ -45,8 +47,12 @@ public class MainActivity extends Activity {
 		
 		
 		//顺序查找
-		HashSet<Integer> result = SequelSearch.searchInArray(searchArray, 9);
-		printHashSet(result);
+//		HashSet<Integer> result = SequelSearch.searchInArray(searchArray, 9);
+//		printHashSet(result);
+		
+		//二分查找
+		int result = BinarySearch.searchInArray(searchArray, 9);
+		Log.d("jin",String.valueOf(result));
 
 	}
 
