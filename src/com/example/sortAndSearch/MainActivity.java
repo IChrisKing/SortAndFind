@@ -3,8 +3,12 @@ package com.example.sortAndSearch;
 
 import java.util.HashSet;
 
+import com.example.BinTree.BinTree;
+
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.annotation.IntRange;
+import android.support.v4.app.INotificationSideChannel;
 import android.util.Log;
 
 
@@ -21,7 +25,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 
 		//直接插入排序
-//		InsertSort.sortArray(sortArray);
+		//InsertSort.sortArray(sortArray);
+//		InsertSort.insertSort(sortArray);
 		
 		//希尔排序
 //		ShellSort.sortArray(sortArray);
@@ -41,7 +46,7 @@ public class MainActivity extends Activity {
 		//归并排序
 //		MergeSort.sortArray(sortArray);
 		
-//		printArray(sortArray);
+		//printArray(sortArray);
 		
 		
 		
@@ -51,9 +56,23 @@ public class MainActivity extends Activity {
 //		printHashSet(result);
 		
 		//二分查找
-		int result = BinarySearch.searchInArray(searchArray, 9);
-		Log.d("jin",String.valueOf(result));
-
+		//int result = BinarySearch.searchInArray(searchArray, 9);
+		//Log.d("jin",String.valueOf(result));
+		
+		
+		//二叉树
+		BinTree binTree = new BinTree();
+		//插入数据
+		int[] binTreeArray = new int[]{7,15,3,65,9,247,2,6,13,43,98,295,0,1,345};
+		for(int i = 0;i<binTreeArray.length;i++){
+			binTree.insert(binTreeArray[i]);
+		}
+		//排序（二叉树形成后，只需中序输出，就是排序后的结果）
+		binTree.inOrder(binTree.root);
+		//删除
+		binTree.delete(43);
+		//查看删除效果
+		binTree.inOrder(binTree.root);
 	}
 
 
@@ -74,6 +93,7 @@ public class MainActivity extends Activity {
 	}
 
 
+	
 
 
 
