@@ -4,11 +4,8 @@ package com.example.sortAndSearch;
 import java.util.HashSet;
 
 import com.example.BinTree.BinTree;
-
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.IntRange;
-import android.support.v4.app.INotificationSideChannel;
 import android.util.Log;
 
 
@@ -48,9 +45,8 @@ public class MainActivity extends Activity {
 		
 		//printArray(sortArray);
 		
-		
-		
-		
+		//try
+
 		//顺序查找
 //		HashSet<Integer> result = SequelSearch.searchInArray(searchArray, 9);
 //		printHashSet(result);
@@ -58,6 +54,7 @@ public class MainActivity extends Activity {
 		//二分查找
 		//int result = BinarySearch.searchInArray(searchArray, 9);
 		//Log.d("jin",String.valueOf(result));
+
 		
 		
 		//二叉树
